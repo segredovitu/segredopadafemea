@@ -96,14 +96,11 @@ h4 {
 
 .evento {
     background-color: #f1f1f1;
-    left: 1%;
     padding: 20px;
     margin: 20px 0;
-    width: 100%;
-    max-width: 710px;
+
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .evento .data {
@@ -122,7 +119,6 @@ h4 {
 .evento:before {
     content: '';
     position: absolute;
-    left: 50%;
     top: -15px;
     width: 20px;
     height: 20px;
