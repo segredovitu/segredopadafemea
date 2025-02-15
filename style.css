@@ -1,0 +1,196 @@
+body {
+    background-color: #FFC0CB;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 30px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+    margin: 20px;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.carrosselMaior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 80px; 
+}
+
+.carrossel {
+    position: relative; 
+    width: 80%; 
+    max-width: 270px; 
+    height: 390px; 
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px; 
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.carrossel-item {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.carrossel-btn.anterior {
+    left: 10px;
+}
+
+.carrossel-btn.proximo {
+    right: 10px;
+}
+
+.carrossel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.linha-do-tempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.evento {
+    background-color: #f1f1f1;
+    left: 1%;
+    padding: 20px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 710px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.evento .data {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4081;
+    text-align: center;
+}
+
+.evento .descricao {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.evento:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    width: 20px;
+    height: 20px;
+    background-color: #ff4081;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.linha-do-tempo::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ff4081;
+    transform: translateX(-50%);
+}
+
+
+.colagem {
+    position: relative;
+    width: 100vw;            
+    height: 100vh;            
+    overflow: hidden;         
+}
+
+.foto {
+    position: absolute;       
+    width: 150px;             
+    height: 150px;           
+    object-fit: cover;        
+    border-radius: 10px;      
+}
+
+.foto:nth-child(1) {
+    top: 15%;
+    left: 10%;
+    transform: rotate(-5deg); 
+}
+
+.foto:nth-child(2) {
+    top:60%;
+    left: 30%;
+    transform: rotate(10deg);
+}
+
+.foto:nth-child(3) {
+    top: 40%;
+    left: 50%;
+    transform: rotate(-8deg);
+}
+
+.foto:nth-child(4) {
+    top: 4%;
+    left: 60%;
+    transform: rotate(7deg);
+}
+
+.foto:nth-child(5) {
+    top: 50%;
+    left: 10%;
+    transform: rotate(-12deg);
+}
+
+.foto:nth-child(6) {
+    top: 2%;
+    left: 40%;
+    transform: rotate(15deg);
+}
+

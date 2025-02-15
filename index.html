@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Para Meu Amor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="coracao.png">
+</head>
+<body>
+    <h1>Para o Amor da Minha Vida</h1>
+    <h3>Escrevendo do fundo do meu coracao o quanto eu te amo, mais que tudo nessa vida. Cada dia que passa eu fico mais feliz contigo, nossas conversas me fazem mais feliz,
+        so de eu ter um tempo pra falar contigo ja me deixa mais alegre, eu amo que voce faz parte da minha vida cada vez mais.
+        Adoro passar tempo contigo, adoro te ver sorrindo, te ver feliz, te ver irritada, te ver de qualquer jeito, pq eu amo voce de qualquer jeito, voce e a pessoa mais incrivel que eu ja conheci e eu quero continuar contigo pra sempre. Voce e a pessoa mais especial que eu ja conheci.
+    </h3>
+<div class="carrosselMaior">
+    <h4>Nossas Fotos de Amor</h4>
+    <div class="carrossel">
+        <div class="carrossel-container">
+            <img src="imagem1.jpg" alt="Imagem 1" class="carrossel-item">
+            <img src="imagem2.jpg" alt="Imagem 2" class="carrossel-item">
+            <img src="imagem3.jpg" alt="Imagem 3" class="carrossel-item">
+            <img src="imagem4.jpg" alt="Imagem 4" class="carrossel-item">
+            <img src="imagem5.jpg" alt="Imagem 5" class="carrossel-item">
+            <img src="imagem6.jpg" alt="Imagem 6" class="carrossel-item">
+        </div>
+        <button class="carrossel-btn anterior" onclick="moverCarrossel(-1)">&#10094;</button>
+        <button class="carrossel-btn proximo" onclick="moverCarrossel(1)">&#10095;</button>
+    </div>
+</div>
+
+
+<div class="evento">
+    <div class="data">Novembro 2024</div>
+    <div class="descricao">O mes que a gente comecou a se falar e o primeiro encontro, desde esse dia eu comecei a gostar mais ainda de voce, pessoa que eu mais amo nessa vida</div>
+  </div>
+
+  <div class="evento">
+    <div class="data">Coisas que Voce Ama Abaixo</div>
+  </div>
+
+  <div class="colagem">
+    <img src="imagem7.jpg" alt="Imagem 7" class="foto">
+    <img src="imagem8.jpg" alt="Imagem 8" class="foto">
+    <img src="imagem9.jpg" alt="Imagem 9" class="foto">
+    <img src="imagem10.jpg" alt="Imagem 10" class="foto">
+    <img src="imagem11.jpg" alt="Imagem 11" class="foto">
+    <img src="imagem12.jpg" alt="Imagem 12" class="foto">
+</div>
+
+<div class="Fotos">
+
+</div>
+
+
+
+
+    <script>
+        let currentIndex = 0;
+
+function moverCarrossel(direction) {
+    const container = document.querySelector('.carrossel-container');
+    const items = document.querySelectorAll('.carrossel-item');
+    const totalItems = items.length;
+
+    currentIndex += direction;
+
+    if (currentIndex >= totalItems) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = totalItems - 1;
+    }
+
+    const offset = -currentIndex * 100;
+    container.style.transform = `translateX(${offset}%)`;
+}
+    </script>
+</body>
+</html>
